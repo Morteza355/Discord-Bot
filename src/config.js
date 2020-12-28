@@ -1,6 +1,5 @@
 const config = {
 	ownerID: ['629630739759104000'],
-	token: 'NzkzMTIzNDYwMDI4MzAxMzIy.X-nryA.Czc1yxElvSzipyyqis73NSZ2hzQ',
 	botClient: 'piRn5nqRtLaOHFBYbHikCoSPsy4LGx6t',
 	// For looking up Twitch, Fortnite, Steam accounts
 	api_keys: {
@@ -55,7 +54,7 @@ const config = {
 		tick: ':white_check_mark:',
 	},
 	// URL to mongodb
-	MongoDBURl: 'mongodb+srv://13831383:13831383@cluster0.su7du.mongodb.net/FullyBot?retryWrites=true&w=majority',
+	MongoDBURl: 'mongodb+srv://13831383:13831383@cluster0.su7du.mongodb.net/deltafullbot?retryWrites=true&w=majority',
 	// if you want debugging turned on or not
 	debug: false,
 };
