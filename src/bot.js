@@ -101,6 +101,6 @@ bot.Stats = {
 	bot.mongoose.init(bot);
 
 	// Connect bot to discord API
-	const token = process.env.token;
-	bot.login(process.env.token).catch(e => bot.logger.error(e.message));
+	
+	bot.login(process.env.token);
 })();
