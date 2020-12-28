@@ -24,20 +24,6 @@ module.exports.run = async (config) => {
 		error = true;
 	}
 
-	// check token
-	if (!config.token) {
-		logger.error(`${chalk.red('✗')} Bot token is missing.`);
-		error = true;
-	} else {
-		const client = new Discord.Client();
-		await client.login(config.token).catch(e => {
-			if (e.message == 'An invalid token was provided.') {
-				logger.error(`${chalk.red('✗')} Bot token is incorrect.`);
-				error = true;
-			}
-		});
-	}
-
 	// Check twitch API
 	if (!config.api_keys.twitch) {
 		logger.error(`${chalk.red('✗')} Twitch API key is missing.`);
